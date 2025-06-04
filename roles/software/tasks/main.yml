@@ -1,0 +1,14 @@
+---
+
+- name: Basic Software
+  ansible.builtin.apt:
+    name:
+      - git
+      - screen
+      - zip
+      - unzip
+      - wget
+      - curl
+      - jq
+      - samba
+      - ufw

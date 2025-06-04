@@ -1,0 +1,8 @@
+---
+- name: 'Conf Ngnix Proxy'
+  hosts: local
+  become: true
+
+  roles: 
+    - role: software
+    - role: proxymanager

@@ -1,0 +1,11 @@
+---
+
+- name: copy docker compose file
+  ansible.builtin.copy:
+    src: docker-compose.yaml
+    dest: /
+    mode: "0777"
+
+- name: Start docker compose
+  ansible.builtin.cmd:
+    cmd: "docker compose -f /docker-compose.yaml up -d"
